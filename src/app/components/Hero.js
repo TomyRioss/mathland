@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative flex-1 flex flex-col items-center justify-center text-center px-4 py-32 min-h-[70vh] overflow-hidden bg-gradient-to-br from-purple-950 via-fuchsia-900 to-gray-950">
+    <section className="relative flex-1 flex flex-col items-center justify-center text-center px-4 py-32 min-h-[60vh] overflow-hidden bg-gradient-to-br from-amber-950 via-yellow-900 to-orange-950">
       <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-fuchsia-800/60 to-purple-950/90 animate-gradient-x" />
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-300/80 via-yellow-500/60 to-amber-600/90 animate-gradient-x" />
         <svg
           className="absolute left-[-10vw] top-[-10vh] w-[40vw] h-[40vw] opacity-40 blur-2xl animate-spin-slow"
           viewBox="0 0 400 400"
@@ -22,12 +22,11 @@ export default function Hero() {
               gradientTransform="translate(200 200) rotate(90) scale(180)"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#a78bfa" stopOpacity="0.5" />
-              <stop offset="1" stopColor="#f0abfc" stopOpacity="0.1" />
+              <stop stopColor="#fcd34d" stopOpacity="0.5" />
+              <stop offset="1" stopColor="#fbbf24" stopOpacity="0.1" />
             </radialGradient>
           </defs>
         </svg>
-        {/* SVG decorativo inferior derecho */}
         <svg
           className="absolute right-[-10vw] bottom-[-10vh] w-[40vw] h-[40vw] opacity-30 blur-2xl animate-spin-reverse-slow"
           viewBox="0 0 400 400"
@@ -43,8 +42,8 @@ export default function Hero() {
               gradientTransform="translate(200 200) rotate(90) scale(180)"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#f0abfc" stopOpacity="0.4" />
-              <stop offset="1" stopColor="#a78bfa" stopOpacity="0.1" />
+              <stop stopColor="#fbbf24" stopOpacity="0.4" />
+              <stop offset="1" stopColor="#fcd34d" stopOpacity="0.1" />
             </radialGradient>
           </defs>
         </svg>
@@ -53,7 +52,7 @@ export default function Hero() {
           {[...Array(18)].map((_, i) => (
             <span
               key={i}
-              className={`absolute w-1.5 h-1.5 rounded-full bg-fuchsia-300/30 animate-float${
+              className={`absolute w-1.5 h-1.5 rounded-full bg-amber-300/30 animate-float${
                 i % 6
               } animate-duration-${4 + (i % 4)}s animate-delay-${i * 0.2}s`}
               style={{
@@ -72,9 +71,9 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: 'easeOut' }}
           className="w-full"
         >
-          <h1 className="text-5xl sm:text-7xl font-extrabold mb-4 drop-shadow-2xl leading-tight bg-gradient-to-r from-purple-300 via-fuchsia-400 to-purple-200 bg-clip-text text-transparent relative inline-block">
+          <h1 className="text-5xl sm:text-7xl font-extrabold mb-4 drop-shadow-2xl leading-tight bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-100 bg-clip-text text-transparent relative inline-block">
             Welcome to MathLand!
-            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-2 bg-gradient-to-r from-fuchsia-400 via-purple-400 to-purple-200 rounded-full blur-md opacity-60 animate-pulse"></span>
+            <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-yellow-300 via-amber-300 to-yellow-200 rounded-full blur-md opacity-60 animate-pulse"></span>
           </h1>
         </motion.div>
         <motion.div
@@ -83,7 +82,7 @@ export default function Hero() {
           transition={{ duration: 1.1, delay: 0.2, ease: 'easeOut' }}
           className="w-full"
         >
-          <p className="text-xl sm:text-2xl mb-10 font-semibold bg-gradient-to-r from-purple-200 via-fuchsia-300 to-purple-100 bg-clip-text text-transparent shadow-lg relative inline-block px-2 py-1 rounded-lg">
+          <p className="text-xl sm:text-2xl mb-10 font-semibold bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-50 bg-clip-text text-transparent shadow-lg relative inline-block px-2 py-1 rounded-lg">
             <span className="absolute -inset-1 bg-white/10 rounded-lg blur-md opacity-40 -z-10"></span>
             A world where learning math is a fun, creative, and discovery-filled
             experience.

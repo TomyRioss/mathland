@@ -4,13 +4,10 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <section
-      className="py-24 px-4 bg-gradient-to-br from-gray-950 to-purple-950"
-      id="who"
-    >
+    <section className="py-24 px-4 bg-gradient-to-t bg-slate-200" id="who">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
-          className="text-4xl sm:text-5xl font-bold text-purple-300 mb-8"
+          className="text-4xl sm:text-5xl font-bold text-amber-900/90 mb-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -19,7 +16,7 @@ export default function Contact() {
           Who can use MathLand?
         </motion.h2>
         <motion.p
-          className="text-gray-200 mb-12 text-lg"
+          className="text-gray-600 mb-12 text-lg"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -33,7 +30,7 @@ export default function Contact() {
           {[0, 1, 2, 3].map(i => (
             <motion.div
               key={i}
-              className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-10 flex flex-col items-center text-center animate-fade-in"
+              className="bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-10 flex flex-col items-center text-center animate-fade-in hover:bg-amber-50/40 transition-colors border border-amber-200/20"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -42,10 +39,10 @@ export default function Contact() {
               {i === 0 && (
                 <>
                   <div className="text-5xl mb-3">🧒👦👧</div>
-                  <h3 className="text-xl font-semibold text-purple-200 mb-2">
+                  <h3 className="text-xl font-semibold text-amber-800/80 mb-2">
                     Children & Students
                   </h3>
-                  <p className="text-gray-100">
+                  <p className="text-gray-600">
                     Of all levels who want to explore math in a more visual,
                     practical, and stimulating way.
                   </p>
@@ -54,22 +51,22 @@ export default function Contact() {
               {i === 1 && (
                 <>
                   <div className="text-5xl mb-3">👨‍👩‍👧‍👦</div>
-                  <h3 className="text-xl font-semibold text-purple-200 mb-2">
+                  <h3 className="text-xl font-semibold text-amber-800/80 mb-2">
                     Families & Caregivers
                   </h3>
-                  <p className="text-gray-100">
-                    Looking for tools to support learning at home in a fun,
-                    hands-on, and effective manner.
+                  <p className="text-gray-600">
+                    In search of tools to support learning at home, in a fun,
+                    practical and effective way.
                   </p>
                 </>
               )}
               {i === 2 && (
                 <>
                   <div className="text-5xl mb-3">👩‍🏫🧑‍🏫</div>
-                  <h3 className="text-xl font-semibold text-purple-200 mb-2">
+                  <h3 className="text-xl font-semibold text-amber-800/80 mb-2">
                     Teachers & Education Professionals
                   </h3>
-                  <p className="text-gray-100">
+                  <p className="text-gray-600">
                     Interested in incorporating active methodologies, digital
                     tools, and new ways of teaching math in their classrooms.
                   </p>
@@ -78,10 +75,10 @@ export default function Contact() {
               {i === 3 && (
                 <>
                   <div className="text-5xl mb-3">🧑‍💻🤔</div>
-                  <h3 className="text-xl font-semibold text-purple-200 mb-2">
+                  <h3 className="text-xl font-semibold text-amber-800/80 mb-2">
                     Curious & Self-taught Individuals
                   </h3>
-                  <p className="text-gray-100">
+                  <p className="text-gray-600">
                     Who enjoy challenges, logical thinking, and interactive
                     resources to strengthen their skills.
                   </p>

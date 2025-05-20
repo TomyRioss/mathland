@@ -5,21 +5,22 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <section
-      className="py-24 px-4 bg-gradient-to-r from-purple-950 via-gray-900 to-gray-950"
+      className="py-24 px-4 bg-gradient-to-r from-amber-50/50 via-white to-amber-50/50"
       id="about"
     >
+      <motion.div
+        className="flex justify-center mb-8"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      >
+        <span className="inline-block w-24 h-1 rounded-full bg-amber-300/50"></span>
+      </motion.div>
+
       <div className="max-w-4xl mx-auto text-center">
-        <motion.div
-          className="flex justify-center mb-8"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-        >
-          <span className="inline-block w-24 h-1 rounded-full bg-purple-400/70"></span>
-        </motion.div>
         <motion.h2
-          className="text-4xl sm:text-5xl font-bold text-purple-200 mb-8"
+          className="text-4xl sm:text-5xl font-bold text-amber-900/90 mb-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -28,16 +29,16 @@ export default function About() {
           About Us
         </motion.h2>
         <motion.div
-          className="space-y-4 text-lg sm:text-xl text-purple-100 mb-6 animate-fade-in delay-100"
+          className="space-y-4 text-lg sm:text-xl text-gray-600 mb-6 animate-fade-in delay-100"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <p className="italic text-purple-200">
+          <p className="italic text-amber-800/80">
             We&apos;re building a space designed just for you.
           </p>
-          <div className="bg-white/10 rounded-xl p-4 shadow-inner border border-purple-400/10">
+          <div className="bg-amber-50/40 rounded-xl p-4 shadow-inner border border-amber-200/20">
             <p className="mb-2">
               MathLand, an interactive platform created to transform the way
               math is learned, will be available very soon. In this space,
@@ -45,7 +46,7 @@ export default function About() {
               activity invites you to explore, imagine, and build knowledge in a
               fun and engaging way.
             </p>
-            <p className="text-purple-200">
+            <p className="text-amber-800/80">
               Whether you&apos;re just beginning your math journey or looking
               for new ways to strengthen your learning, MathLand will support
               you with practical, entertaining, and colorful resources.

@@ -5,14 +5,15 @@ import About from './components/About';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import { Separator } from '@/components/ui/separator';
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 to-gray-800 font-sans">
+    <div className="min-h-screen flex flex-col   font-sans">
       <Header />
       <Hero />
-      <Features />
       <About />
+      <Features />
       <Contact />
       <CallToAction />
       <Footer />

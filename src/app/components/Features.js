@@ -5,37 +5,31 @@ import { motion } from 'framer-motion';
 const features = [
   {
     href: '#coming',
-    title: 'Coming Soon',
     desc: 'Structured courses and interactive lessons that guide you step by step, from basic concepts to more advanced challenges, with clear, dynamic, and accessible explanations for all learners.',
     icon: '📚',
   },
   {
     href: '#courses',
-    title: 'Features',
     desc: 'ath games and challenges that turn every concept into an adventure, encouraging active participation and critical thinking.',
     icon: '🎲',
   },
   {
     href: '#about',
-    title: 'About',
     desc: 'Digital and downloadable manipulative materials designed to support the understanding of mathematical concepts through objects, colors, and movement. These tools spark imagination and offer a wide range of options to enrich learning in a hands-on and meaningful way. ',
     icon: '🧩',
   },
   {
     href: '#who',
-    title: 'Who can use MathLand?',
     desc: ' Exploration of patterns, shapes, numbers, and operations in a visual and practical way, helping connect math with real-life situations.',
     icon: '🌐',
   },
   {
     href: '#reasoning',
-    title: 'Reasoning',
     desc: 'Activities that help develop skills such as reasoning, observation, problem-solving, and creativity.',
     icon: '🧠',
   },
   {
     href: '#families',
-    title: 'Families & Teachers',
     desc: 'Spaces for families and educators, with guides, suggestions, and tools to support the learning process at home or in the classroom.',
     icon: '👨‍👩‍👧‍👦',
   },
@@ -43,10 +37,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section
-      className="py-24 px-4 bg-gradient-to-br from-gray-900 to-gray-950"
-      id="features"
-    >
+    <section className="py-24 px-4 bg-gradient-to-b bg-slate-200" id="features">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="mb-12"
@@ -55,10 +46,10 @@ export default function Features() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-purple-300 text-center mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold text-amber-900/90 text-center mb-4">
             What will you find at MathLand?
           </h2>
-          <p className="text-gray-200 text-center text-xl">
+          <p className="text-gray-600 text-center text-xl">
             At MathLand, every corner is designed to make learning math an
             engaging, dynamic, and accessible experience for everyone. Our
             platform will offer a wide variety of resources tailored to
@@ -69,23 +60,20 @@ export default function Features() {
           {features.map((f, i) => (
             <motion.div
               key={i}
-              className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-10 flex flex-col items-center text-center border border-purple-400/10 group"
+              className="bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-10 flex flex-col items-center text-center border border-amber-200/20 group hover:bg-amber-50/40 transition-colors"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: i * 0.1 }}
               whileHover={{
                 scale: 1.07,
-                boxShadow: '0 8px 32px 0 rgba(168,139,250,0.25)',
+                boxShadow: '0 8px 32px 0 rgba(251,191,36,0.1)',
               }}
             >
               <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">
                 {f.icon}
               </div>
-              <h3 className="text-2xl font-semibold text-purple-200 mb-2">
-                {f.title}
-              </h3>
-              <p className="text-gray-100 text-base">{f.desc}</p>
+              <p className="text-gray-600 text-base">{f.desc}</p>
             </motion.div>
           ))}
         </div>
