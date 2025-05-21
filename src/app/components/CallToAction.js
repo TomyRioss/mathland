@@ -13,16 +13,16 @@ export default function CallToAction() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        Ready to Start Your Math Journey?
+        MathLand is more than a platform, it&apos;s a new way of seeing math.
       </motion.h2>
       <motion.p
-        className="mb-8 text-lg text-amber-50"
+        className="mb-8 text-lg text-amber-50 text-shadow-2xl"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.1 }}
       >
-        Unlock a world of mathematical exploration!
+        Join us and discover how fun learning can be.
       </motion.p>
       <div className="flex flex-col items-center justify-center">
         <a

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative flex-1 flex flex-col items-center justify-center text-center px-4 py-32 min-h-[60vh] overflow-hidden bg-gradient-to-br from-amber-950 via-yellow-900 to-orange-950">
+    <section className="relative flex-1 flex flex-col items-center justify-center text-center px-4 py-32 min-h-[60vh] overflow-hidden bg-gradient-to-br from-amber-550 via-yellow-500 to-orange-550">
       <div className="absolute inset-0 pointer-events-none z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-300/80 via-yellow-500/60 to-amber-600/90 animate-gradient-x" />
         <svg

@@ -10,7 +10,7 @@ const features = [
   },
   {
     href: '#courses',
-    desc: 'ath games and challenges that turn every concept into an adventure, encouraging active participation and critical thinking.',
+    desc: 'Math games and challenges that turn every concept into an adventure, encouraging active participation and critical thinking.',
     icon: '🎲',
   },
   {
