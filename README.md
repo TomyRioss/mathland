@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MathLand 🎮
 
-## Getting Started
+MathLand es una plataforma interactiva diseñada para transformar la forma en que se aprende matemáticas, convirtiendo cada concepto en una aventura divertida y creativa.
 
-First, run the development server:
+## Características Principales 🌟
+
+- **Cursos Estructurados**: Lecciones interactivas que guían paso a paso desde conceptos básicos hasta desafíos avanzados.
+- **Juegos Matemáticos**: Convierte el aprendizaje en una experiencia lúdica y entretenida.
+- **Materiales Manipulativos**: Recursos digitales y descargables para apoyar el aprendizaje práctico.
+- **Exploración Visual**: Conexión de las matemáticas con situaciones reales a través de patrones y formas.
+- **Desarrollo de Habilidades**: Actividades que fomentan el razonamiento, la observación y la creatividad.
+- **Espacio para Familias**: Guías y herramientas para apoyar el aprendizaje en casa.
+
+## Tecnologías Utilizadas 🛠️
+
+- Next.js 15.3.2
+- React 19
+- Framer Motion
+- Tailwind CSS
+- Geist Font
+
+## Instalación 🚀
+
+1. Clona el repositorio:
+
+```bash
+git clone [url-del-repositorio]
+```
+
+2. Instala las dependencias:
+
+```bash
+npm install
+```
+
+3. Inicia el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Scripts Disponibles 📜
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev`: Inicia el servidor de desarrollo
+- `npm run build`: Construye la aplicación para producción
+- `npm run start`: Inicia la aplicación en modo producción
+- `npm run lint`: Ejecuta el linter para verificar el código
 
-## Learn More
+## Estructura del Proyecto 📁
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── components/     # Componentes de la aplicación
+│   ├── globals.css     # Estilos globales
+│   └── layout.js       # Layout principal
+├── components/         # Componentes UI reutilizables
+└── lib/               # Utilidades y funciones auxiliares
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contacto 📧
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para cualquier consulta o sugerencia, no dudes en contactarme.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desarrollado con ❤️ por Tomas Rios para potenciar el pensamiento matemático.
