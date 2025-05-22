@@ -1,6 +1,40 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+
+const Particles = () => {
+  const [particles, setParticles] = useState([]);
+
+  useEffect(() => {
+    const newParticles = [...Array(18)].map((_, i) => ({
+      id: i,
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+    }));
+    setParticles(newParticles);
+  }, []);
+
+  return (
+    <div className="absolute inset-0 z-10">
+      {particles.map(particle => (
+        <span
+          key={particle.id}
+          className={`absolute w-1.5 h-1.5 rounded-full bg-amber-300/30 animate-float${
+            particle.id % 6
+          } animate-duration-${4 + (particle.id % 4)}s animate-delay-${
+            particle.id * 0.2
+          }s`}
+          style={{
+            left: particle.left,
+            top: particle.top,
+            filter: 'blur(1.5px)',
+          }}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default function Hero() {
   return (
@@ -47,22 +81,7 @@ export default function Hero() {
             </radialGradient>
           </defs>
         </svg>
-        {/* Partículas sutiles */}
-        <div className="absolute inset-0 z-10">
-          {[...Array(18)].map((_, i) => (
-            <span
-              key={i}
-              className={`absolute w-1.5 h-1.5 rounded-full bg-amber-300/30 animate-float${
-                i % 6
-              } animate-duration-${4 + (i % 4)}s animate-delay-${i * 0.2}s`}
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                filter: 'blur(1.5px)',
-              }}
-            />
-          ))}
-        </div>
+        <Particles />
       </div>
       <div className="relative z-20 flex flex-col items-center max-w-3xl w-full">
         <motion.div
@@ -89,7 +108,6 @@ export default function Hero() {
           </p>
         </motion.div>
       </div>
-      {/* Animaciones personalizadas para partículas y gradientes */}
       <style jsx>{`
         .animate-gradient-x {
           animation: gradient-x 12s ease-in-out infinite alternate;
